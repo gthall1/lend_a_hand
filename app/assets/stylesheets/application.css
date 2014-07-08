@@ -10,7 +10,6 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap.min
  *= require_tree .
  *= require_self
  */
@@ -22,4 +21,13 @@
        url('../assets/glyphicons-halflings-regular.woff') format('woff'),
        url('../assets/glyphicons-halflings-regular.ttf') format('truetype'),
        url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.search-area {
+  z-index: 160;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  padding-top: 180px;
 }
