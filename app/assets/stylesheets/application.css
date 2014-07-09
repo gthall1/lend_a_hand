@@ -43,3 +43,25 @@
 hr {
   border-top: 1px solid #dcdcdc;
 }
+
+.map{
+  position: fixed;
+  top: 47px;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+}
+
+.map_canvas {
+  height: 100%;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
