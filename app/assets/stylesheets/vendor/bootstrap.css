@@ -278,6 +278,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  padding-bottom: 40px;
 }
 input,
 button,
@@ -5414,7 +5415,7 @@ button.close {
 }
 .carousel {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 .carousel-inner {
   position: relative;
