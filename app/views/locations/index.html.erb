@@ -1,0 +1,9 @@
+<h1>all locations</h1>
+
+<ul>
+  <% @location.each do |location|%>
+    <li><%= location.address %> => <%= location.latitude %> - <%= location.longitude %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add new location', new_location_path %>
