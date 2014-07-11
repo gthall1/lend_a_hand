@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'underscore' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose cache add [ 'underscore', null ]
+5 verbose cache add name=undefined spec="underscore" args=["underscore",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'underscore',
+6 verbose parsed url   path: 'underscore',
+6 verbose parsed url   href: 'underscore' }
+7 silly lockFile 64bc6893-underscore underscore
+8 verbose lock underscore /Users/griffhall/.npm/64bc6893-underscore.lock
+9 silly lockFile 64bc6893-underscore underscore
+10 silly lockFile 64bc6893-underscore underscore
+11 verbose addNamed [ 'underscore', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 7629b758-underscore underscore@
+14 verbose lock underscore@ /Users/griffhall/.npm/7629b758-underscore.lock
+15 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+16 verbose url raw underscore
+17 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+18 verbose url resolved https://registry.npmjs.org/underscore
+19 info trying registry request attempt 1 at 12:09:27
+20 verbose etag "7G10W31I3H2LGBXF7CLYIWAKN"
+21 http GET https://registry.npmjs.org/underscore
+22 http 200 https://registry.npmjs.org/underscore
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Fri, 11 Jul 2014 16:09:26 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"C3HX8062YOGBX6ZO2TJX5V8GR"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=30',
+23 silly registry.get     'content-length': '30754',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '129',
+23 silly registry.get     'x-served-by': 'cache-at51-ATL',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '3',
+23 silly registry.get     'x-timer': 'S1405094966.704216,VS0,VE0',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+25 silly addNameRange versions [ 'underscore',
+25 silly addNameRange   [ '1.0.3',
+25 silly addNameRange     '1.0.4',
+25 silly addNameRange     '1.1.0',
+25 silly addNameRange     '1.1.1',
+25 silly addNameRange     '1.1.2',
+25 silly addNameRange     '1.1.3',
+25 silly addNameRange     '1.1.4',
+25 silly addNameRange     '1.1.5',
+25 silly addNameRange     '1.1.6',
+25 silly addNameRange     '1.1.7',
+25 silly addNameRange     '1.2.0',
+25 silly addNameRange     '1.2.1',
+25 silly addNameRange     '1.2.2',
+25 silly addNameRange     '1.2.3',
+25 silly addNameRange     '1.2.4',
+25 silly addNameRange     '1.3.0',
+25 silly addNameRange     '1.3.1',
+25 silly addNameRange     '1.3.2',
+25 silly addNameRange     '1.3.3',
+25 silly addNameRange     '1.4.0',
+25 silly addNameRange     '1.4.1',
+25 silly addNameRange     '1.4.2',
+25 silly addNameRange     '1.4.3',
+25 silly addNameRange     '1.4.4',
+25 silly addNameRange     '1.5.0',
+25 silly addNameRange     '1.5.1',
+25 silly addNameRange     '1.5.2',
+25 silly addNameRange     '1.6.0' ] ]
+26 verbose addNamed [ 'underscore', '1.6.0' ]
+27 verbose addNamed [ '1.6.0', '1.6.0' ]
+28 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+29 verbose lock underscore@1.6.0 /Users/griffhall/.npm/96960ed1-underscore-1-6-0.lock
+30 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+31 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz /Users/griffhall/.npm/a02bf4de--underscore-underscore-1-6-0-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz',
+32 verbose addRemoteTarball   '8b38b10cacdef63337b8b24e4ff86d45aea529a8' ]
+33 info retry fetch attempt 1 at 12:09:28
+34 verbose fetch to= /var/folders/r1/262grpq17fbgbvss0xccxhc80000gn/T/npm-23288-Xb9LykKa/registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+35 http GET https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+36 http 200 https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+37 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+38 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+39 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+40 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+41 silly lockFile 7629b758-underscore underscore@
+42 silly lockFile 7629b758-underscore underscore@
+43 error Error: EACCES, mkdir '/Users/griffhall/.npm/underscore/1.6.0'
+43 error  { [Error: EACCES, mkdir '/Users/griffhall/.npm/underscore/1.6.0']
+43 error   errno: 3,
+43 error   code: 'EACCES',
+43 error   path: '/Users/griffhall/.npm/underscore/1.6.0' }
+44 error Please try running this command again as root/Administrator.
+45 error System Darwin 13.2.0
+46 error command "node" "/usr/local/bin/npm" "install" "underscore"
+47 error cwd /Users/griffhall/Dropbox/launchacademy/lend_a_hand
+48 error node -v v0.10.29
+49 error npm -v 1.4.14
+50 error path /Users/griffhall/.npm/underscore/1.6.0
+51 error code EACCES
+52 error errno 3
+53 error stack Error: EACCES, mkdir '/Users/griffhall/.npm/underscore/1.6.0'
+54 verbose exit [ 3, true ]

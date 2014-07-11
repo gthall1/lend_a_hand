@@ -1,9 +1,21 @@
-<h1>all locations</h1>
+<body>
+  <div class="wholepage">
 
-<ul>
-  <% @location.each do |location|%>
-    <li><%= location.address %> => <%= location.latitude %> - <%= location.longitude %></li>
-  <% end %>
-</ul>
+    <div class="sidebar">
+      <h1>all locations</h1>
+      <ul>
+        <% @location.each do |location|%>
+          <li><%= location.address %> => <%= location.latitude %> - <%= location.longitude %></li>
+        <% end %>
+      </ul>
 
-<%= link_to 'Add new location', new_location_path %>
+      <%= link_to 'Add new location', new_location_path %>
+    </div> <!-- end sidebar -->
+
+    <div class="map">
+      <h1> map goes here</h1>
+    </div> <!-- end map -->
+
+  </div> <!-- end wholepage -->
+</body>
+

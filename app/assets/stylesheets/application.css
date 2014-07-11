@@ -46,7 +46,7 @@ hr {
 
 .map{
   position: fixed;
-  top: 47px;
+  top: 51px;
   left: 0;
   bottom: 0;
   width: 40%;
@@ -61,7 +61,23 @@ iframe {
   width: 100%;
 }
 
+.sidebar {
+  position: fixed;
+  top: 51px;
+  right: 0;
+  width: 60%;
+  overflow-y: scroll;
+  bottom: 0;
+}
 
+.sidebar-header {
+  height:100%;
+}
 
-
-
+.wholepage {
+  position: absolute;
+  top: 51px;
+  bottom: 0
+  left: 0
+  right: 0;
+}
