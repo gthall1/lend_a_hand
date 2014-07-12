@@ -1,6 +1,11 @@
 class LocationsController < ApplicationController
   def index
-    @location = Location.all
+    @locations = Location.all
+
+    @location_markers = Gmaps4rails.build_markers(@locations) do |location, marker|
+      marker.lat location.latitude
+      marker.lng location.longitude
+    end
   end
 
   def show

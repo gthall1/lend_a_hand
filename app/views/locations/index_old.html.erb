@@ -1,0 +1,41 @@
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlGakIpyKTDeF4auy6t3kglBY1HUfaMQI">
+</script>
+
+
+  <div class="wholepage">
+
+    <div class="sidebar">
+      <h1>all locations</h1>
+      <ul>
+        <% @locations.each do |location|%>
+          <li><%= location.address %> => <%= location.latitude %> - <%= location.longitude %></li>
+        <% end %>
+      </ul>
+
+      <%= link_to 'Add new location', new_location_path %>
+    </div> <!-- end sidebar -->
+
+    <!-- ==================================================================
+         map   -->
+
+    <div class="map">
+      <div id="map-canvas">
+
+      </div> <!-- end map-canvas -->
+    </div> <!-- end map -->
+
+  </div> <!-- end wholepage -->
+
+<script type="text/javascript">
+  $(function() {
+    var mapOptions = {
+      center: new google.maps.LatLng(-34.397, 150.644),
+      zoom: 8
+    };
+
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+  });
+</script>

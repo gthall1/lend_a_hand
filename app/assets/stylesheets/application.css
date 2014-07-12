@@ -52,13 +52,8 @@ hr {
   width: 40%;
 }
 
-.map_canvas {
+#map-canvas {
   height: 100%;
-}
-
-iframe {
-  height: 100%;
-  width: 100%;
 }
 
 .sidebar {
