@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   resources :needs, except: :destroy
   resources :locations, except: :destroy
   # The priority is based upon order of creation: first created -> highest priority.
