@@ -1,6 +1,6 @@
 class NeedsController < ApplicationController
   def index
-    @need = Need.all
+    @needs = Need.all
   end
 
   def show
