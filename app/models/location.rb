@@ -1,5 +1,7 @@
 class Location < ActiveRecord::Base
+  #hail mary...change to belongs_to
   has_many :needs
+
 
   validates :address, presence: true
 

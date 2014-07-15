@@ -29,14 +29,14 @@
 <!-- right side of page -->
     <div class="sidebar">
       <h1>Help Requests</h1>
-      <ul>
-        <% @needs.each do |need|%>
-          <li><%= need.title %> => <%= need.description %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% @needs.each do |need|%>
+            <li><%= need.title %> => <%= need.description %></li>
+          <% end %>
+        </ul>
 
-      <%= link_to 'Add new location', new_location_path %>
+      <%= link_to 'Add new help request', new_need_path %>
     </div> <!-- end sidebar -->
-</div>
+
   </body>
 </html>

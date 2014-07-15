@@ -13,6 +13,7 @@ class LocationsController < ApplicationController
 
   def new
     @location = Location.new
+    @location.needs.build
   end
 
   def create
