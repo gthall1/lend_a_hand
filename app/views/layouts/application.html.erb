@@ -28,12 +28,13 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-      <%= form_tag locations_path, class: 'navbar-form navbar-left', :method => :get do %>
+    <!-- search function -->
+      <%= form_tag needs_path, class: 'navbar-form navbar-left', :method => :get do %>
         <div class="form-group">
           <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: 'Where can you help?' %>
           <%= submit_tag "Search Near", class: 'btn btn-default', :name => nil %>
         </div>
-      <% end %>
+      <% end %> <!-- search end -->
 
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Sign Up!", new_user_registration_path %></li>

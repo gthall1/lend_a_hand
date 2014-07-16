@@ -1,6 +1,16 @@
 class NeedsController < ApplicationController
   def index
-    @needs = Need.all
+    if params[:search].present?
+      #
+      # problem is bc of my database tables (see how linked below) I can't call
+      # Location.near like suggested in tutorial. Really need to do
+      # Need.location.address.near somehow (pseudocode)
+      #
+      locations = Location.near(params[:search], 10 ).map(&:id)
+      @needs = Need.where(location_id: locations)
+    else
+      @needs = Need.limit(20)
+    end
 
     @locations = []
     @needs.each do |need|
@@ -23,7 +33,7 @@ class NeedsController < ApplicationController
   end
 
   def create
-     @need = Need.new(need_params)
+    @need = Need.new(need_params)
      #add error about invalid location
     @location = Location.create(address: address_params)
 
