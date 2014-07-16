@@ -31,7 +31,8 @@
       <h1>Help Requests</h1>
         <ul>
           <% @needs.each do |need|%>
-            <li><%= need.title %> => <%= need.description %></li>
+            <li>TITLE: <%= need.title %><br> DESCRIPTION: <%= need.description %><br>
+              <%= need.location.address %></li>
           <% end %>
         </ul>
 
