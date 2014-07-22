@@ -29,16 +29,28 @@
 
       <div class="sidebar"> <!-- right side of page -->
         <h1>Help Requests</h1>
-        <div class="search-results">
+        <div class="needs-container">
           <ul>
             <% @needs.each do |need|%>
-              <li>TITLE: <%= need.title %><br> DESCRIPTION: <%= need.description %><br>
-                <%= need.location.address %></li>
+              <li class="listing">
+                <div class="row">
+                  <div class="col-12 col-lg-8">
+                    <h3><%= need.title %></h3><br>
+                    <p><%= need.description %></p><br>
+                    <h4><%= need.location.address %></h4>
+                  </div>
+                  <div class="col-12 col-lg-4 righty">
+                    <a class="btn btn-primary" href="#">Lend a Hand</a>
+                  </div>
+                </div> <!-- end row -->
+              </li>
             <% end %>
           </ul>
         </div> <!-- end search results -->
 
-        <%= link_to 'Add new help request', new_need_path, class: "btn btn-default" %>
+        <div class="add-button">
+          <%= link_to 'Add new help request', new_need_path, class: "btn btn-success" %>
+        </div> <!-- end button -->
       </div> <!-- end sidebar -->
     </div> <!-- wholepage -->
   </body>
