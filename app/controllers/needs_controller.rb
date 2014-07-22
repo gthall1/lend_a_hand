@@ -9,7 +9,8 @@ class NeedsController < ApplicationController
       locations = Location.near(params[:search], 10 ).map(&:id)
       @needs = Need.where(location_id: locations)
     else
-      @needs = Need.limit(20)
+      @needs = Need.order(created_at: :desc)
+      #@needs = Need.limit(20)
     end
 
     @locations = []
